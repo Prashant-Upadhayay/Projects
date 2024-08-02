@@ -1,0 +1,149 @@
+@import url('https://font.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    color: #ededed;
+    height: 100vh;
+    width: 100vw;
+
+}
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+
+}
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ededed;
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 30px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    font-size: 18px;
+    color: #00abf0;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    background-image: url("image.png");
+    align-items: center;
+    background-size:contain;
+    
+    padding: 0 10%;
+}
+.home-content{
+    max-width: 600px;
+
+}
+.home-content h1{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content p{
+    font-size: 16px;
+    margin:20px 0 40px;
+    line-height: 24px;
+
+}
+.home-content .btn-box{
+    height: 50px;
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box a{
+    position: relative;
+    height: 100%;
+    width: 150px;
+    display: inline-flex;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    background-color: #00abf0;
+    color: #081b29;
+    text-decoration: none;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:nth-child(2):hover{
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(1):hover{
+    background: transparent;
+    color: #00abf0;
+}
+.home-sci{
+    position: absolute;
+    bottom: 25px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    background: transparent;
+    color: #00abf0;
+    text-decoration: none;
+    font-size: large;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover{
+    color: #081b29;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover:before{
+    width: 100%;
+}
